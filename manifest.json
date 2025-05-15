@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "magic clip board",
+    "version": "1.0",
+    "description": "magic clip board",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/public/images/16.jpg",
+            "48": "/public/images/48.jpg",
+            "128": "/public/images/128.jpg"
+        }
+    },
+    "icons": {
+        "16": "/public/images/16.jpg",
+        "48": "/public/images/48.jpg",
+        "128": "/public/images/128.jpg"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Alt+C",
+                "mac": "Command+Alt+C"
+            },
+            "description": "확장 프로그램 실행"
+        }
+    }
+}

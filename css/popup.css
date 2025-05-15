@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'tages';
+    src: url('/public/fonts/tages.woff');
+}
+
+body {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    font-family: 'tages';
+}
