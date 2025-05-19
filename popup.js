@@ -12,8 +12,8 @@ chrome.storage.local.get(['copiedTexts'], (result) => {
         div.addEventListener('click', function () {
             navigator.clipboard.writeText(this.textContent)
                 .then(() => {
-                    this.style.backgroundColor = '#eee';
-                    this.style.color = '#000';
+                    this.style.backgroundColor = '#00000020';
+                    this.style.color = '#00800040';
                     setTimeout(() => {
                         this.style.backgroundColor = '';
                         this.style.color = '';
@@ -37,8 +37,8 @@ chrome.storage.local.get(['copiedTexts'], (result) => {
                 if (targetBox) {
                     navigator.clipboard.writeText(targetBox.textContent)
                         .then(() => {
-                            targetBox.style.backgroundColor = '#eee';
-                            targetBox.style.color = '#000';
+                            targetBox.style.backgroundColor = '#00000020';
+                            targetBox.style.color = '#00800040';
                             setTimeout(() => {
                                 targetBox.style.backgroundColor = '';
                                 targetBox.style.color = '';

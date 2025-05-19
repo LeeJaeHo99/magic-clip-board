@@ -19,7 +19,7 @@
 }
 
 html{
-    border: none;
+    background: #E6DFCF;
 }
 
 body {
@@ -34,6 +34,7 @@ h1{
     margin-bottom: 24px;
     font-family: 'tages';
     font-size: 24px;
+    color: #342E20;
     text-align: center;
 }
 .box{
@@ -44,10 +45,12 @@ h1{
     backdrop-filter: blur(10px);
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1882352941);
     font-family: 'p-m';
-    color: #a5a5a5;
+    font-size: 14px;
+    color: #645E4E;
     text-align: left;
     line-height: 1.3;
     border-radius: 4px;
     transition: background-color 0.1s ease-in-out;
+    user-select: none;
     cursor: pointer;
 }
