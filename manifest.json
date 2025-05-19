@@ -1,28 +1,30 @@
 {
     "manifest_version": 3,
-    "name": "magic clip board",
+    "name": "Magic Clipboard",
     "version": "1.0",
-    "description": "magic clip board",
+    "description": "자동으로 복사한 텍스트를 저장합니다.",
+    "permissions": ["storage", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    },
     "action": {
         "default_popup": "popup.html",
-        "default_icon": {
-            "16": "/public/images/16.jpg",
-            "48": "/public/images/48.jpg",
-            "128": "/public/images/128.jpg"
-        }
-    },
-    "icons": {
-        "16": "/public/images/16.jpg",
-        "48": "/public/images/48.jpg",
-        "128": "/public/images/128.jpg"
+        "default_icon": "/public/images/icon.png"
     },
     "commands": {
         "_execute_action": {
             "suggested_key": {
-                "default": "Ctrl+Alt+C",
-                "mac": "Command+Alt+C"
+                "default": "Alt+Shift+V",
+                "mac": "Alt+Shift+V"
             },
-            "description": "확장 프로그램 실행"
+            "description": "Show popup"
         }
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ]
 }
