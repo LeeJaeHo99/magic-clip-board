@@ -13,8 +13,10 @@ chrome.storage.local.get(['copiedTexts'], (result) => {
             navigator.clipboard.writeText(this.textContent)
                 .then(() => {
                     this.style.backgroundColor = '#eee';
+                    this.style.color = '#000';
                     setTimeout(() => {
                         this.style.backgroundColor = '';
+                        this.style.color = '';
                     }, 200);
                 });
         });
@@ -36,8 +38,10 @@ chrome.storage.local.get(['copiedTexts'], (result) => {
                     navigator.clipboard.writeText(targetBox.textContent)
                         .then(() => {
                             targetBox.style.backgroundColor = '#eee';
+                            targetBox.style.color = '#000';
                             setTimeout(() => {
                                 targetBox.style.backgroundColor = '';
+                                targetBox.style.color = '';
                             }, 200);
                         })
                         .catch(err => {
