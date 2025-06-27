@@ -49,28 +49,3 @@ chrome.storage.local.get(['copiedTexts'], (result) => {
     });
     
 });
-
-
-// document.addEventListener('keydown', function (e) {
-//     if (e.shiftKey) {
-//         const keyNum = parseInt(e.key);
-        
-//         if (!isNaN(keyNum) && keyNum >= 1 && keyNum <= 5) {
-//             const boxes = document.querySelectorAll('.box');
-//             const targetBox = boxes[keyNum - 1];
-
-//             if (targetBox) {
-//                 navigator.clipboard.writeText(targetBox.textContent)
-//                     .then(() => {
-//                         targetBox.style.backgroundColor = '#eee';
-//                         setTimeout(() => {
-//                             targetBox.style.backgroundColor = '';
-//                         }, 200);
-//                     })
-//                     .catch(err => {
-//                         console.error('텍스트 복사 실패:', err);
-//                     });
-//             }
-//         }
-//     }
-// });

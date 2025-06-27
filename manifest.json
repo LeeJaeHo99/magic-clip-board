@@ -2,8 +2,8 @@
     "manifest_version": 3,
     "name": "Magic Clipboard",
     "version": "1.0",
-    "description": "자동으로 복사한 텍스트를 저장합니다.",
-    "permissions": ["storage", "scripting"],
+    "description": "It automatically saves copied text and can be used at any time.",
+    "permissions": ["storage"],
     "background": {
         "service_worker": "background.js"
     },
