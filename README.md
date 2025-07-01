@@ -10,7 +10,7 @@
 - [성과 및 배운점](#프로젝트-소개)
 
 ## 📍 프로젝트 소개
-<a href="https://" target="blank">링크 추가 예정/a>
+<a href="https://chromewebstore.google.com/detail/magic-clipboard/ealhfboahjjldbkodbfafeeocpckbjpf?hl=ko&utm_source=ext_sidebar" target="blank">확장 프로그램 링크</a>
 <p>기여도: 100%</p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/887cceef-c0dc-4fab-8aed-5d93a9f58687" width="800"/>
